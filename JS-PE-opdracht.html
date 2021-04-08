@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form validatie</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='stylesheet' href='JS-PE-opdracht.css' type='text/css' />  
+<script src="JS-PE-opdracht.js"></script>  
+</head>
+<style>
+  
+</style>
+<body>
+
+	<div id="main">
+		
+		<div>
+			<h1 id="title">Form validatie</h1>
+		
+
+		<div>
+
+			<form action="#" method="post" name="myForm" id="survey-form" onsubmit="return Validate(event)">
+
+				<div class="row" id="row-1">
+					<div class="label">
+						<label for="fullname" id="name-label">*Naam: </label>
+					</div>
+					<div class="input">
+						<input type="text" name="fullname" id="fullname" placeholder="Naam">
+					</div>
+        </div>
+        <div>
+
+          <form action="#" method="post" name="myForm" id="survey-form" onsubmit="return Validate(event)">
+    
+            <div class="row" id="row-2">
+              <div class="label">
+                <label for="gebruikersnaam" id="gebruikersnaam-label">*Gebruikersnaam: </label>
+              </div>
+              <div class="input">
+                <input type="text" name="gebruikersnaam" id="gebruikersnaam" placeholder="Gebruikersnaam">
+              </div>
+            </div>
+
+				<div class="row" id="row-3">
+					<div class="label">
+						<label for="email" id="email-label">*Email: </label>
+					</div>
+					<div class="input">
+						<input type="email" name="email" id="email" placeholder="Email">
+					</div>
+				</div>
+
+				<div class="row" id="row-4">
+					<div class="label">
+						<label for="number" id="age-label">*Leeftijd: </label>
+					</div>
+					<div class="input">
+						<input type="number" name="age" id="age" placeholder="Leeftijd">
+					</div>
+				</div>
+        
+
+				<div class="row" id="row-5">
+					<div class="label" id="drop-down-label">
+							<label>*Land </label>
+					</div>
+					<div class="select">
+						<select name="dropdown" id="dropdown">
+                <option disabled selected value>Opties</option>
+                <option value="student">Belgie</option>
+								<option value="student">Nederland</option>
+								<option value="job">Duitsland</option>
+								
+						</select>
+					</div>
+				</div>
+
+			
+
+				<div class="row" id="row-6">
+					<div class="label" id="drop-down-label-2">
+							<label>Provincie</label>
+					</div>
+					<div class="select">
+						<select name="dropdown-2" id="dropdown-2">
+								<option disabled selected value>Kies een provincie aub</option>
+								<option value="">Brussel</option>
+								<option value="">Antwerpen</option>
+								<option value="">Limburg</option>
+								<option value="">West Vlaanderen</option>
+								<option value="">Oost Vlaanderen</option>
+								<option value="">Vlaams Brabant</option>
+						</select>
+					</div>
+        </div>
+        
+        <div>
+
+          <form action="#" method="post" name="myForm" id="survey-form" onsubmit="return Validate(event)">
+    
+            <div class="row" id="row-7">
+              <div class="label">
+                <label for="adres" id="adres-label">*Adres: </label>
+              </div>
+              <div class="input">
+                <input type="text" name="adres" id="adres" placeholder="Adres">
+              </div>
+            </div>
+        <div class="row" id="row-8">
+					<div class="label">
+						<label id="betaling-label">*Hoe wilt u graag betalen?</label>
+					</div>
+					<div class="radio" id="radio-container">
+						<ul>
+							<li><input type="radio" name="betaling-system" id="betaling-system-1"><label for="betaling-system-1">Banking app</label></li>
+							<li><input type="radio" name="betaling-system" id="betaling-system-2"><label for="betaling-system-2">Overschrijving</label></li>
+							<li><input type="radio" name="betaling-system" id="betaling-system-3"><label for="betaling-system-3">Master Card</label></li>
+							<li><input type="radio" name="betaling-system" id="betaling-system-4"><label for="betaling-system-4">PayPal</label></li>
+				
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="row-9">
+					<div class="label">
+						<label>Hou mij op de hoogte</label>
+					</div>
+					<div class="radio">
+						<ul>
+							<li><input type="checkbox" name="check-system" id="system-1"><label for="system-1">Inschrijven voor de nieuwsbrief</label></li>
+							<li><input type="checkbox" name="check-system" id="system-2"><label for="system-2">Ik ga akkoord met de algemene voorwaarden</label></li>
+					
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" id="row-10">
+					<div class="label" id="textboxLabel">
+						<label >Voor meer informatie, laat ons weten:</label>
+					</div>
+					<div class="textbox">
+						<textarea name="textboxfield" id="textboxfield" cols="40" rows="5" placeholder="Schrijf jouw bericht hier..."></textarea>
+					</div>
+				</div>
+
+				<div class="row" id="row-11">
+					<div class="button">
+						<button type="submit">Verzenden</button>
+					</div>
+				</div>	
+
+			</form>
+			
+		</div>
+
+		
+
+	</div>
+
+
+
+    <script>
+     
+     
+</script>
+    
+</body>
+
+</html>
